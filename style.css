@@ -112,7 +112,9 @@
 	      opacity: 1;
 	  }	  
 	}
-/*  	@-webkit-keyframes rotateMain{
+
+	/*This does a little animation with the center diamond.  I am not sure if I like it yet or not! */
+	/*@-webkit-keyframes rotateMain{
 	  0%{
 	      -webkit-transform: rotate(45deg) scale(1,1);
 	  }
