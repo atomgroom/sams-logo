@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sam's Club Logo Loading Icon</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <style>
+  	body {
+  		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   		font-weight: 300;
+  	}
+  	.loadingWrapper {
+  		width: 61px;
+  		height: 85px;
+  		position: relative;
+  		margin: 50px auto;
+  	}
+  	.logo-mainDiamond,
+  	.logo-leftDiamond,
+  	.logo-rightDiamond {
+  		position: absolute;
+		transform:rotate(45deg);
+		-ms-transform:rotate(45deg); /* IE 9 */
+		-webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+  	}
+  	.logo-mainDiamond {
+  		width: 30px;
+  		height: 30px;
+  		background: #026dad;
+  		top: 20px;
+  		left: 15px;
+  		z-index: 3;
+  		-webkit-animation: rotateMain 2s linear infinite;
+  	}
+  	.logo-leftDiamond,
+  	.logo-rightDiamond {
+  		width: 36px;
+  		height: 36px;
+  		top: 17px;
+  	}
+  	.logo-leftDiamond {
+  		background: #1ca0db;
+  		left: 8px;
+  		z-index: 2;
+  		-webkit-animation: slideLeft 2s linear infinite;
+  		-moz-animation: slideLeft 2s linear infinite;
+  	}
+  	.logo-rightDiamond {
+  		background: #68a64f;
+  		right: 8px;
+  		z-index: 1;
+  		-webkit-animation: slideRight 2s linear infinite;
+  		-moz-animation: slideRight 2s linear infinite;
+  	}
+  	.loadingText {
+  		font-size: 100%;
+  		position: absolute;
+  		bottom: 0;
+  		left: 4px;
+  		color: #999;
+  	}
+  	@-moz-keyframes slideLeft {
+	  0%{
+	      left:8px;
+	      opacity: 1;
+	  }
+	  50%{
+	      left:16px;
+	      opacity: .5;
+	  }
+	  100%{
+	      left:8px;
+	      opacity: 1;
+	  }	  
+	}
+  	@-moz-keyframes slideRight{
+	  0%{
+	      right:8px;
+	      opacity: 1;
+	  }
+	  50%{
+	      right:17px;
+	      opacity: .5;
+	  }
+	  100%{
+	      right:8px;
+	      opacity: 1;
+	  }	  
+	}
+  	@-webkit-keyframes slideLeft {
+	  0%{
+	      left:8px;
+	      opacity: 1;
+	  }
+	  50%{
+	      left:16px;
+	      opacity: .5;
+	  }
+	  100%{
+	      left:8px;
+	      opacity: 1;
+	  }	  
+	}
+  	@-webkit-keyframes slideRight{
+	  0%{
+	      right:8px;
+	      opacity: 1;
+	  }
+	  50%{
+	      right:17px;
+	      opacity: .5;
+	  }
+	  100%{
+	      right:8px;
+	      opacity: 1;
+	  }	  
+	}
+/*  	@-webkit-keyframes rotateMain{
+	  0%{
+	      -webkit-transform: rotate(45deg) scale(1,1);
+	  }
+	  79%{
+	      -webkit-transform: rotate(45deg) scale(1,1);
+	  }
+	  80%{
+	      -webkit-transform: rotate(180deg) scale(0,0);
+	  }
+	  100%{
+	      -webkit-transform: rotate(-45deg) scale(1,1);
+	  }	  
+	}*/		
+  </style>
+</head>
+<body>
+	<div class="loadingWrapper">
+		<div class="logo-mainDiamond"></div>
+		<div class="logo-leftDiamond"></div>
+		<div class="logo-rightDiamond"></div>
+		<div class="loadingText">Loading</div>
+	</div>
+
+</body>
+</html>
